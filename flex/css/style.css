@@ -69,23 +69,17 @@ a {
 
 .phone {
   font-size: 21px;
-  font-weight: 700;
   text-align: right;
   line-height: 26px;
   color: #ffffff;
   text-transform: uppercase;
-  display: inline-block;
 }
 
 .contacts-schedule {
   font-size: 14px;
   text-align: right;
   line-height: 21px;
-  margin-left: 68px;
   color: #bbceed;
-  display: inline-block;
-  background-color:#1c5bc3;
-  border: none;
 
   text-decoration: underline;
 }
@@ -331,11 +325,7 @@ li {
   width: 160px;
   height: 160px;
   margin-bottom: 16px;
-}
 
-.personal-img img {
-  -webkit-clip-path: circle(50% at 50% 50%);
-  clip-path:circle(50% at 50% 50%);
 }
 
 .personal-item h2{
