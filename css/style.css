@@ -239,7 +239,7 @@ li {
 
 /*==================================================================*/
 
-.main-content {
+.main-content-team-page {
   width: 880px;
   margin: 0px;
   margin-left: 180px;
@@ -282,7 +282,7 @@ li {
 
 /*==================================================================*/
 
-.main-title{
+.team-title{
   margin: 0px;
   padding: 0px;
   padding-top: 23px;
@@ -509,3 +509,283 @@ padding: 0px;
   float: right;
   min-height: 100%;
 }
+
+/*==================================================================*/
+
+.title-background {
+  width: 879px;
+  height: 355px;
+  background-image: url(../img/main-background.jpg);
+  background-repeat: no-repeat;
+  background-position: 0px -78px;
+}
+
+.main-title{
+  padding-top: 158px;
+  padding-bottom: 160px;
+  padding-left: 64px;
+  -webkit-margin-before: 0px;
+  font-family: Roboto;
+  font-size: 49px;
+  line-height: 38px;
+  color: #221f1f;
+}
+
+/*==================================================================*/
+
+.main-content-main-page {
+  padding: 0px;
+  margin: 0px;
+  /*-webkit-margin-after: 0px;
+  -webkit-margin-before: 0px;*/
+  margin-left: 180px;
+  font-family: Roboto;
+  font-size: 17px;
+  line-height: 26px;
+  color: #221f1f;
+}
+
+.about-air-planet {
+  width: 700px;
+  margin-bottom: 25px;
+  /*background-color: pink;*/
+}
+
+.customers li {
+  font: inherit;
+  list-style: disc outside;
+}
+
+.main-content-main-page p {
+  margin-top: 23px;
+}
+
+.companies {
+  font-weight: 700;
+}
+
+/*==================================================================*/
+
+.reservation {
+  margin: 0px;
+  color: #ffffff;
+  background-color:#1c5bc3;
+  padding-left: 30px;
+  padding-right: 75px;
+  padding-top: 13px;
+  padding-bottom: 10px;
+  margin-bottom: 71px;
+  width: 595px;
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.reservation-phone {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.application {
+font-size: 18px;
+font-weight: 700;
+line-height: 30px;
+margin: 0px;
+padding: 0px;
+color: #ffffff;
+display: inline-block;
+background-color:#1c5bc3;
+border: none;
+
+text-decoration: underline;
+}
+
+/*==================================================================*/
+
+.partners {
+  width: 700px;
+  height: 285px;
+  /*background-color: grey;*/
+}
+
+.partners h2 {
+  margin: 0px;
+  padding: 0px;
+  font-family: Roboto;
+  font-size: 49px;
+  font-weight: 700;
+  line-height: 38px;
+  color: #221f1f;
+  margin-bottom: 50px;
+}
+
+.partners_logo {
+  margin: 0px;
+  padding: 0px;
+  width: 700px;
+  height: 200px;
+  /*background-color: lightblue;*/
+}
+
+.partners_logo li {
+  float: left;
+  margin-right: 115px;
+  margin-bottom: 60px;
+}
+
+.partners_logo li:nth-child(3n) {
+  margin-right:0px;
+  /*background-color: pink;*/
+}
+
+/*==================================================================*/
+
+.bmp-company {
+  width:159px;
+  height:30px;
+  position: relative;
+}
+
+.bmp-company img{
+  width:100%;
+  position: absolute;
+  top:15px;
+  left:0px;
+}
+
+.bmp-company .over {
+  opacity: 100%;
+  z-index: 30;
+
+}
+
+.bmp-company .over:hover {
+  opacity: 0;
+}
+
+/*==================================================================*/
+
+.tetra-install {
+  width:161px;
+  height:64px;
+  position: relative;
+}
+
+.tetra-install img{
+  width:100%;
+  position: absolute;
+  top:0px;
+  left:0px;
+}
+
+.tetra-install .over {
+  opacity: 100%;
+  z-index: 30;
+
+}
+
+.tetra-install .over:hover {
+  opacity: 0;
+}
+
+/*==================================================================*/
+
+.sib-airlines {
+  width:133px;
+  height:64px;
+  position: relative;
+}
+
+.sib-airlines img{
+  width:100%;
+  position: absolute;
+  top:0px;
+  left:5px;
+}
+
+.sib-airlines .over {
+  opacity: 100%;
+  z-index: 30;
+}
+
+.sib-airlines .over:hover {
+  opacity: 0;
+}
+
+/*==================================================================*/
+
+.one-air {
+  width:159px;
+  height:63px;
+  position: relative;
+}
+
+.one-air img{
+  width:100%;
+  position: absolute;
+  top:0px;
+  left:0px;
+}
+
+.one-air .over {
+  /*opacity: 100%;*/
+  z-index: 30;
+}
+
+.one-air .over:hover {
+  opacity: 0;
+}
+
+/*==================================================================*/
+
+.BingAir {
+  width:161px;
+  height:64px;
+  position: relative;
+}
+
+.BingAir img{
+  /*width:100%;*/
+  position: absolute;
+  top:0px;
+  left:60px;
+}
+
+.BingAir .over {
+  opacity: 100%;
+  z-index: 30;
+}
+
+.BingAir .over:hover {
+  opacity: 0;
+}
+
+/*==================================================================*/
+
+.Ural {
+  width:133px;
+  height:64px;
+  position: relative;
+}
+
+.Ural img{
+  /*width:100%;*/
+  position: absolute;
+  top:0px;
+  left:30px;
+}
+
+.Ural .over {
+  opacity: 100%;
+  z-index: 30;
+}
+
+.Ural .over:hover {
+  opacity: 0;
+}
+
+/*==================================================================*/
