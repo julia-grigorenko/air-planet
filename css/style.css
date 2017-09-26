@@ -26,14 +26,16 @@ a {
 
 /*==================================================================*/
 
-.wrapper {
+/*.wrapper {
   margin: 0 auto;
   padding: 0;
-}
+}*/
 
-.main-header {
+.mainHeader {
   background-color: #1c5bc3;
   min-height: 77px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .container {
@@ -45,29 +47,29 @@ a {
 
 /*==================================================================*/
 
-.main-logo {
+.mainHeader__logo {
   display: inline-block;
   padding-top: 17px;
   padding-bottom: 17px;
 }
 
-.main-logo img {
+.mainHeader__logo img {
   width: 121px;
   height: 37px;
 }
 
 /*==================================================================*/
 
-.contacts {
+.mainHeader__contacts {
   width: 181px;
-  height: 75px;
+  height: 47px;
   padding-top: 12px;
   padding-bottom: 16px;
   float: right;
   position: relative;
 }
 
-.phone {
+.mainHeader__phone {
   font-size: 21px;
   font-weight: 700;
   text-align: right;
@@ -77,7 +79,7 @@ a {
   display: inline-block;
 }
 
-.contacts-schedule {
+.mainHeader__contactsSchedule button{
   font-size: 14px;
   text-align: right;
   line-height: 21px;
@@ -90,11 +92,11 @@ a {
   text-decoration: underline;
 }
 
-.contacts-schedule:hover {
+.mainHeader__contactsSchedule:hover {
   color: #ffffff;
 }
 
-.schedule {
+.mainHeader__schedule {
   font-size: 14px;
   color: #221f1f;
   position: absolute;
@@ -112,19 +114,20 @@ a {
   background-position: 50% 50%;
 }
 
-.schedule b{
+.mainHeader__schedule-open{
   color: #1c5bc3;
+  font-weight: bold;
 }
 
-.schedule {
+.mainHeader__schedule {
   display: none;
 }
-.contacts-schedule:hover .schedule {
+.mainHeader__contactsSchedule:hover .mainHeader__schedule {
   display: block;
 }
 /*==================================================================*/
 
-main {
+.wrapper {
   max-width: 1060px;
   margin: 0 auto;
   padding-left: 20px;
@@ -134,7 +137,7 @@ main {
 
 /*==================================================================*/
 
-nav {
+.sidebar {
   float: left;
   width: 160px;
   margin: 0px;
@@ -149,7 +152,7 @@ nav {
   /*background-color: pink;*/
 }
 
-.sidebar-navigation {
+.sidebar__navigation {
   margin: 0px;
   padding: 0px;
   font-family: Roboto;
@@ -166,12 +169,9 @@ li {
   list-style: none;
 }
 
-.sidebar-navigation li {
+.sidebar__navigation li {
   line-height: 1.5;
   padding-bottom: 30px;
-}
-
-.sidebar-navigation li {
   padding-left: 36px;
   position: relative;
 }
@@ -213,6 +213,7 @@ li {
   background-image: url(../img/feed_icon-blue.png);
   background-repeat: no-repeat;
   background-position: 0 0;
+
 }
 
 .sidebar-current {
@@ -239,7 +240,7 @@ li {
 
 /*==================================================================*/
 
-.main-content-team-page {
+.mainContent__teamPage {
   width: 880px;
   margin: 0px;
   margin-left: 180px;
@@ -259,21 +260,23 @@ li {
   color: #497ccf;
 }
 
-.breadcrumbs a {
+.breadcrumbs__link {
   text-decoration: underline;
-}
-
-.breadcrumbs li {
   display: inline-block;
 }
 
-.breadcrumbs-current {
+.breadcrumbs__item {
+  display: inline-block;
+}
+
+.breadcrumbs__item-current {
+  display: inline-block;
   color: #4e4c4c;
   padding-left: 8px;
   position: relative;
 }
 
-.breadcrumbs-current::before {
+.breadcrumbs__item-current::before {
   content: "/";
   position: absolute;
   top: 0px;
@@ -282,7 +285,7 @@ li {
 
 /*==================================================================*/
 
-.team-title{
+.teamPage__title{
   margin: 0px;
   padding: 0px;
   padding-top: 23px;
@@ -294,7 +297,7 @@ li {
 
 /*==================================================================*/
 
-.personal {
+.teamPage__personal {
   margin: 0 auto;
   padding: 0px;
   padding-left: 10px;
@@ -311,7 +314,7 @@ li {
 
 }
 
-.personal-item {
+.personal__item {
  float: left;
  width:260px;
  height: 373px;
@@ -320,12 +323,12 @@ li {
  /*background-color: grey;*/
 }
 
-.personal-item:nth-child(3n) {
+.personal__item:nth-child(3n) {
   margin-right:0px;
   /*background-color: pink;*/
 }
 
-.personal-img {
+.personal__imgCover {
   margin: 0 auto;
   padding: 0px;
   width: 160px;
@@ -333,12 +336,12 @@ li {
   margin-bottom: 16px;
 }
 
-.personal-img img {
+.personal__img {
   -webkit-clip-path: circle(50% at 50% 50%);
   clip-path:circle(50% at 50% 50%);
 }
 
-.personal-item h2{
+.personal__title {
   margin: 0px;
   padding: 0px;
   -webkit-margin-before: 0px;
@@ -348,7 +351,7 @@ li {
   font-size: 16px;
 }
 
-.personal-item b{
+.personal__range{
   margin: 0px;
   padding: 0px;
   display: block;
@@ -359,7 +362,7 @@ li {
   margin-bottom: 0px;
 }
 
-.description{
+.personal__description{
   min-height: 141px;
   /*background-color: red;*/
 
@@ -371,7 +374,9 @@ li {
 
 /*==================================================================*/
 
-.main-footer {
+.mainFooter {
+  margin: 0 auto;
+  padding: 0;
   margin-top: 65px;
   background-color: #1c5bc3;
   min-height: 77px;
@@ -383,34 +388,40 @@ li {
   display: inline-block;
   width: 250px;
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 18px;
   color: #ffffff;
+  width: 33%;
+  float: left;
+  min-height: 100%;
   /*background-color: pink;*/
 }
 
-.copyright-link {
+.copyright__link {
+  display: inline-block;
   color: inherit;
   font-weight: 700;
   text-decoration: underline;
 }
 
-.copyright p {
+.copyright__text {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.copyright a {
+.copyright__owner {
   display: inline-block;
-}
-
-.copyright b {
-  display: inline-block;
+  font-weight: bold;
 }
 
 /*==================================================================*/
+.footerLogo {
+  width: 33%;
+  float: left;
+  min-height: 100%;
+}
 
-.footer-logo {
+.footerLogo__link {
   display: inline-block;
   padding-top: 17px;
   padding-bottom: 17px;
@@ -418,65 +429,73 @@ li {
   /*background-color: lightgreen;*/
 }
 
-.footer-logo img {
+.footerLogo__img {
   width: 121px;
   height: 37px;
 }
 
 /*==================================================================*/
+.col3 {
+  width: 33%;
+  float: right;
+  min-height: 100%;
+}
 
-.footer-social {
+.footerSocial {
   float: right;
   width: 160px;
   font-family: Roboto;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
+
 }
 
-.footer-social ul {
+.socialBtns {
 -webkit-padding-start: 0px;
 margin: 0px;
 padding: 0px;
 }
 
-.footer-social h3 {
-  font-size: 14px;
+.footerSocial__title {
+  font-size: 13px;
 }
 
-.social-item {
+.socialBtns__item {
   float: left;
   width: 22px;
   height: 22px;
   margin: 0px;
   padding: 0px;
-  margin-right: 8px;
+  margin-right: 3px;
   border: 1px solid #ffffff;
   border-radius: 50%;
   background-color: #ffffff;
   position: relative;
 }
 
-.social-item:nth-child(5) {
+.socialBtns__item:nth-child(5) {
   margin-right: 0px;
 }
 
-.social-item:hover {
+.socialBtns__item:hover {
  background-color: #d2def3;
 }
 
-.social-button img {
+.socialButton__img {
   position: absolute;
   top: 6px;
   left: 5px;
 }
 
-.social-button-vk img {
+.socialButton__img-vk {
+  position: absolute;
   top: 7px;
   left: 4px;
 }
 
-.social-button-fb img {
+.socialButton__img-fb {
+  position: absolute;
   top: 5px;
   left: 8px;
 }
@@ -493,47 +512,9 @@ padding: 0px;
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-
-.col1 {
-  width: 33%;
-  float: left;
-  min-height: 100%;
-}
-.col2 {
-  width: 33%;
-  float: left;
-  min-height: 100%;
-}
-.col3 {
-  width: 33%;
-  float: right;
-  min-height: 100%;
-}
-
 /*==================================================================*/
 
-.title-background {
-  width: 879px;
-  height: 355px;
-  background-image: url(../img/main-background.jpg);
-  background-repeat: no-repeat;
-  background-position: 0px -78px;
-}
-
-.main-title{
-  padding-top: 158px;
-  padding-bottom: 160px;
-  padding-left: 64px;
-  -webkit-margin-before: 0px;
-  font-family: Roboto;
-  font-size: 49px;
-  line-height: 38px;
-  color: #221f1f;
-}
-
-/*==================================================================*/
-
-.main-content-main-page {
+.mainContent-mainPage {
   padding: 0px;
   margin: 0px;
   /*-webkit-margin-after: 0px;
@@ -545,22 +526,49 @@ padding: 0px;
   color: #221f1f;
 }
 
-.about-air-planet {
+.mainContent-mainPage p {
+  margin-top: 23px;
+}
+/*==================================================================*/
+
+.mainContent__titleBackground {
+  margin: 0px;
+  padding: 0px;
+  width: 879px;
+  height: 355px;
+  background-image: url(../img/main-background.jpg);
+  background-repeat: no-repeat;
+  background-position: 0px -78px;
+}
+
+.mainContent__mainTitle{
+  display: inline-block;
+  margin: 0px;
+  padding-top: 158px;
+  padding-bottom: 122px;
+  padding-left: 64px;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  font-family: Roboto;
+  font-size: 49px;
+  line-height: 38px;
+  color: #221f1f;
+}
+
+/*==================================================================*/
+
+.mainContent__aboutAirPlanet {
   width: 700px;
   margin-bottom: 25px;
   /*background-color: pink;*/
 }
 
-.customers li {
+.aboutAirPlanet__customers li {
   font: inherit;
   list-style: disc outside;
 }
 
-.main-content-main-page p {
-  margin-top: 23px;
-}
-
-.companies {
+.mainContent__aboutAirPlanet-companies {
   font-weight: bold;
 }
 
@@ -577,11 +585,11 @@ padding: 0px;
   margin-bottom: 71px;
   width: 595px;
   font-family: Roboto;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 30px;
 }
 
-.reservation-phone {
+.reservation__phone {
   display: inline-block;
   font-size: 18px;
   font-weight: 700;
@@ -590,7 +598,7 @@ padding: 0px;
   text-transform: uppercase;
 }
 
-.application {
+.reservation__btn {
 font-size: 18px;
 font-weight: 700;
 line-height: 30px;
@@ -623,7 +631,7 @@ text-decoration: underline;
   margin-bottom: 50px;
 }
 
-.partners_logo {
+.partnersLogo {
   margin: 0px;
   padding: 0px;
   width: 700px;
@@ -631,160 +639,160 @@ text-decoration: underline;
   /*background-color: lightblue;*/
 }
 
-.partners_logo li {
+.partnersLogo li {
   float: left;
   margin-right: 115px;
   margin-bottom: 60px;
 }
 
-.partners_logo li:nth-child(3n) {
+.partnersLogo li:nth-child(3n) {
   margin-right:0px;
   /*background-color: pink;*/
 }
 
 /*==================================================================*/
 
-.bmp-company {
+.partnersLogo__bmpCompany {
   width:159px;
   height:30px;
   position: relative;
 }
 
-.bmp-company img{
+.partnersLogo__bmpCompany img{
   width:100%;
   position: absolute;
   top:15px;
   left:0px;
 }
 
-.bmp-company .over {
+.partnersLogo__bmpCompany-over {
   opacity: 100%;
   z-index: 30;
 
 }
 
-.bmp-company .over:hover {
+.partnersLogo__bmpCompany-over:hover {
   opacity: 0;
 }
 
 /*==================================================================*/
 
-.tetra-install {
+.partnersLogo__tetraInstall {
   width:161px;
   height:64px;
   position: relative;
 }
 
-.tetra-install img{
+.partnersLogo__tetraInstall img{
   width:100%;
   position: absolute;
   top:0px;
   left:0px;
 }
 
-.tetra-install .over {
+.partnersLogo__tetraInstall-over {
   opacity: 100%;
   z-index: 30;
 
 }
 
-.tetra-install .over:hover {
+.partnersLogo__tetraInstall-over:hover {
   opacity: 0;
 }
 
 /*==================================================================*/
 
-.sib-airlines {
+.partnersLogo__sibAirlines {
   width:133px;
   height:64px;
   position: relative;
 }
 
-.sib-airlines img{
+.partnersLogo__sibAirlines img{
   width:100%;
   position: absolute;
   top:0px;
   left:5px;
 }
 
-.sib-airlines .over {
+.partnersLogo__sibAirlines-over {
   opacity: 100%;
   z-index: 30;
 }
 
-.sib-airlines .over:hover {
+.partnersLogo__sibAirlines-over:hover {
   opacity: 0;
 }
 
 /*==================================================================*/
 
-.one-air {
+.partnersLogo__oneAir {
   width:159px;
   height:63px;
   position: relative;
 }
 
-.one-air img{
+.partnersLogo__oneAir img{
   width:100%;
   position: absolute;
   top:0px;
   left:0px;
 }
 
-.one-air .over {
+.partnersLogo__oneAir-over {
   /*opacity: 100%;*/
   z-index: 30;
 }
 
-.one-air .over:hover {
+.partnersLogo__oneAir-over:hover {
   opacity: 0;
 }
 
 /*==================================================================*/
 
-.BingAir {
+.partnersLogo__BingAir {
   width:161px;
   height:64px;
   position: relative;
 }
 
-.BingAir img{
+.partnersLogo__BingAir img{
   /*width:100%;*/
   position: absolute;
   top:0px;
   left:60px;
 }
 
-.BingAir .over {
+.partnersLogo__BingAir-over {
   opacity: 100%;
   z-index: 30;
 }
 
-.BingAir .over:hover {
+.partnersLogo__BingAir-over:hover {
   opacity: 0;
 }
 
 /*==================================================================*/
 
-.Ural {
+.partnersLogo__Ural {
   width:133px;
   height:64px;
   position: relative;
 }
 
-.Ural img{
+.partnersLogo__Ural img{
   /*width:100%;*/
   position: absolute;
   top:0px;
   left:30px;
 }
 
-.Ural .over {
+.partnersLogo__Ural-over {
   opacity: 100%;
   z-index: 30;
 }
 
-.Ural .over:hover {
+.partnersLogo__Ural-over:hover {
   opacity: 0;
 }
 

@@ -8,133 +8,145 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <header class="wrapper main-header">
+    <header class="mainHeader">
       <div class="container">
-        <a href="index.html" class="main-logo">
+        <a class="mainHeader__logo" href="index.html" >
           <img src="img/logo_header.png" width="121" height="37" alt="Логотип компании AIR-PLANET">
         </a>
-        <div class="contacts">
-          <a href="tel:+79818169862>89818169862" class="phone">8 (800) 00-392-10</a>
-          <button class="contacts-schedule">График работы
-            <div class="schedule">
-              <b>пн-вс: 09:00-20:00</b>
-              <span>обед: 14:00-14:30</span>
+        <section class="mainHeader__contacts">
+          <a class="mainHeader__phone" href="tel:+79818169862" >8 (800) 00-392-10</a>
+          <div class="mainHeader__contactsSchedule">
+            <button>График работы</button>
+            <div class="mainHeader__schedule">
+              <span class="mainHeader__schedule-open">пн-вс: 09:00-20:00</span>
+              <span class="mainHeader__schedule-closed">обед: 14:00-14:30</span>
             </div>
-          </button>
-        </div>
+          </div>
+        </section>
       </div>
     </header>
-    <main>
-      <nav>
-        <ul class="sidebar-navigation">
+    <main class="wrapper">
+      <nav class="sidebar">
+        <ul class="sidebar__navigation">
           <li><a class="sidebar-main sidebar-current current-main" href="#">Главная</a></li>
           <li><a class="sidebar-team" href="team.html">Экипаж</a></li>
           <li><a class="sidebar-comments" href="comments.html">Отзывы</a></li>
         </ul>
       </nav>
-      <div class="main-content-main-page">
-        <div class="title-background">
-          <h1 class="main-title">О компании</h1>
-        </div>
-        <div class="about-air-planet">
-        <p><span class="companies">Air Planet</span> — это крупнейшая авиакомпания в Москве.
-            Благодаря сотрудничеству с <span class="companies">Europe Airlines</span>, мы предлагаем билеты
-            на комфортабельные рейсы в большинство известных курортных городов Западной Европы.
-            Также мы сотрудничаем с американскими и австралийскими авиакомпаниями,
-            за счет чего обеспечиваем возможность заказа билетов на рейсы практически в любую точку мира.
-         </p>
-        <p>Нашими ключевыми клиентами остаются:</p>
-        <ul class="customers">
-          <li>Частные лица — туристы и путешественники, как самостоятельные,
-             так и организованные турфирмами.
-          </li>
-          <li>Коммерческие организации, которые отправляют своих сотрудников в командировки.
-              За счет отлаженной логистики мы готовы предложить наиболее выгодные цены.
-          </li>
-        </ul>
-        <p>Поездки в столицы европейских стран осуществляются без пересадок.
-           На дальние расстояния мы предлагаем оптимальные маршруты, с тщательным расчетом времени пересадки.
-         </p>
-        <p>Оплата билетов осуществляется любым удобным способом – банковской картой,
-           денежным переводом или наличными. Регулярно проводятся акции и скидки,
-           особенно на раннее бронирование и оптовые заказы.
-        </p>
-        <p>Наши аналитики исследуют рынок и помогают составить оптимальные маршруты,
-           с учетом особенностей региона и других факторов.
-        </p>
-        <p>Наши постоянные клиенты участвуют в бонусной программе и при накоплении достаточной суммы
-           на своем виртуальном счету, могут оплатить билет бонусными баллами.
-        </p>
-        </div>
-        <div class="reservation">Бронировать билеты в нашей авиакомпании удобно. Для этого можно оставить
-          <button class="application">заявку на сайте</button>
-           или же позвонить по номеру круглосуточной поддержки <a class="reservation-phone"href="tel:+79818169862>89818169862">8 (800) 00-392-10</a>.
-        </div>
-        <div class="partners">
-          <h2>Партнёры</h2>
-          <ul class="partners_logo">
-            <li class="bmp-company"><img class="over" src="img/bmp-logo.png" width="159" height="30"><img src="img/bmp-logo-color.png" width="159" height="30"></li>
-            <li class="tetra-install"><img class="over" src="img/tetra-logo.png" width="161" height="64"><img src="img/tetra-logo-color.png" width="161" height="64"></li>
-            <li class="sib-airlines"><img class="over" src="img/sibair-logo.png" width="133" height="64"><img src="img/sibair-logo-color.png" width="133" height="64"></li>
-            <li class="one-air"><img class="over" src="img/oneair-logo.png" width="141" height="63"><img src="img/oneair-logo-color.png" width="141" height="63"></li>
-            <li class="BingAir"><img class="over" src="img/bing-logo.png" width="46" height="64"><img src="img/bing-logo-color.png" width="46" height="64"></li>
-            <li class="Ural"><img class="over" src="img/ural-logo.png" width="82" height="64"><img src="img/ural-logo-color.png" width="82" height="64"></li>
+      <section class="mainContent-mainPage">
+        <section class="mainContent__titleBackground">
+          <h1 class="mainContent__mainTitle">О компании</h1>
+        </section>
+        <section class="mainContent__aboutAirPlanet">
+          <p><span class="mainContent__aboutAirPlanet-companies">Air Planet</span> — это крупнейшая авиакомпания в Москве.
+              Благодаря сотрудничеству с <span class="mainContent__aboutAirPlanet-companies">Europe Airlines</span>, мы предлагаем билеты
+              на комфортабельные рейсы в большинство известных курортных городов Западной Европы.
+              Также мы сотрудничаем с американскими и австралийскими авиакомпаниями,
+              за счет чего обеспечиваем возможность заказа билетов на рейсы практически в любую точку мира.
+          </p>
+          <p>Нашими ключевыми клиентами остаются:</p>
+          <ul class="aboutAirPlanet__customers">
+            <li>Частные лица — туристы и путешественники, как самостоятельные,
+               так и организованные турфирмами.
+            </li>
+            <li>Коммерческие организации, которые отправляют своих сотрудников в командировки.
+                За счет отлаженной логистики мы готовы предложить наиболее выгодные цены.
+            </li>
           </ul>
-      </div>
-    </main>
-    <footer class="wrapper main-footer">
-      <div class="container">
-        <div class="col1">
-          <div class="copyright">
-            <p>Сделано с любовью и старанием <br>
-                на курсе «HTML + CSS» в <a class="copyright-link" href="#">LoftSchool</a>.<br>
-                Автор работы: <b>Прохладов Вадим</b>
-            </p>
-          </div>
-        </div>
-        <div class="col2">
-          <a href="index.html" class="footer-logo">
-            <img src="img/logo_header.png" width="121" height="37" alt="Логотип компании AIR-PLANET">
+          <p>Поездки в столицы европейских стран осуществляются без пересадок.
+             На дальние расстояния мы предлагаем оптимальные маршруты, с тщательным расчетом времени пересадки.
+          </p>
+          <p>Оплата билетов осуществляется любым удобным способом – банковской картой,
+             денежным переводом или наличными. Регулярно проводятся акции и скидки,
+             особенно на раннее бронирование и оптовые заказы.
+          </p>
+          <p>Наши аналитики исследуют рынок и помогают составить оптимальные маршруты,
+             с учетом особенностей региона и других факторов.
+          </p>
+          <p>Наши постоянные клиенты участвуют в бонусной программе и при накоплении достаточной суммы
+             на своем виртуальном счету, могут оплатить билет бонусными баллами.
+          </p>
+        </section>
+        <section class="reservation">Бронировать билеты в нашей авиакомпании удобно. Для этого можно оставить
+          <button class="reservation__btn">заявку на сайте</button>
+          или же позвонить по номеру круглосуточной поддержки <a class="reservation__phone" href="tel:+79818169862">8 (800) 00-392-10</a>.
+        </section>
+        <section class="partners">
+          <h2>Партнёры</h2>
+          <ul class="partnersLogo">
+            <li class="partnersLogo__bmpCompany"><img class="partnersLogo__bmpCompany-over" src="img/bmp-logo.png" width="159" height="30" alt="Логотип компании bmp-company">
+                                    <img src="img/bmp-logo-color.png" width="159" height="30" alt="Логотип компании bmp-company">
+            </li>
+            <li class="partnersLogo__tetraInstall"><img class="partnersLogo__tetraInstall-over" src="img/tetra-logo.png" width="161" height="64" alt="Логотип компании tetra-install">
+                                      <img src="img/tetra-logo-color.png" width="161" height="64" alt="Логотип компании tetra-install">
+            </li>
+            <li class="partnersLogo__sibAirlines"><img class="partnersLogo__sibAirlines-over" src="img/sibair-logo.png" width="133" height="64" alt="Логотип компании Сибирские-авиалинии">
+                                      <img src="img/sibair-logo-color.png" width="133" height="64" alt="Логотип компании Сибирские-авиалинии">
+            </li>
+            <li class="partnersLogo__oneAir"><img class="partnersLogo__oneAir-over" src="img/oneair-logo.png" width="141" height="63" alt="Логотип компании one-air">
+                                <img src="img/oneair-logo-color.png" width="141" height="63" alt="Логотип компании one-air">
+            </li>
+            <li class="partnersLogo__BingAir"><img class="partnersLogo__BingAir-over" src="img/bing-logo.png" width="46" height="64" alt="Логотип компании bing-air">
+                                <img src="img/bing-logo-color.png" width="46" height="64" alt="Логотип компании bing-air">
+            </li>
+            <li class="partnersLogo__Ural"><img class="partnersLogo__Ural-over" src="img/ural-logo.png" width="82" height="64" alt="Логотип компании Урал">
+                            <img src="img/ural-logo-color.png" width="82" height="64" alt="Логотип компании Урал">
+            </li>
+          </ul>
+        </section>
+    </section>
+  </main>
+  <footer class="mainFooter">
+    <div class="container">
+        <section class="copyright">
+          <p class="copyright__text">Сделано с любовью и старанием <br>
+              на курсе «HTML + CSS» в <a class="copyright__link" href="#">LoftSchool</a>.<br>
+              Автор работы: <span class="copyright__owner">Прохладов Вадим</span>
+          </p>
+        </section>
+        <section class="footerLogo">
+          <a href="index.html" class="footerLogo__link">
+            <img class="footerLogo__img" src="img/logo_header.png" width="121" height="37" alt="Логотип компании AIR-PLANET">
           </a>
-        </div>
+        </section>
         <div class="col3">
-          <div class="footer-social">
-            <h3>Наши социальные сети</h3>
-            <ul>
-              <li class="social-item">
-                <a class="social-button social-button-vk" href="#">
+          <section class="footerSocial">
+            <h3 class="footerSocial__title">Наши социальные сети</h3>
+            <ul class="socialBtns">
+              <li class="socialBtns__item">
+                <a class="socialButton" href="#">
                   <span class="visually-hidden">Вконтакте</span>
-                  <img src="img/vk.png" width="14" height="8" alt="Страница Вконтакте компании AIR-PLANET">
+                  <img class="socialButton__img-vk" src="img/vk.png" width="14" height="8" alt="Страница Вконтакте компании AIR-PLANET">
                 </a>
               </li>
-              <li class="social-item">
-                <a class="social-button social-button-fb" href="#">
+              <li class="socialBtns__item">
+                <a class="socialButton" href="#">
                   <span class="visually-hidden">Фейсбук</span>
-                  <img src="img/fb.png" width="6" height="13" alt="Страница Фейсбук  компании AIR-PLANET">
+                  <img class="socialButton__img-fb" src="img/fb.png" width="6" height="13" alt="Страница Фейсбук  компании AIR-PLANET">
                 </a>
               </li>
-              <li class="social-item">
-                <a class="social-button" href="#">
+              <li class="socialBtns__item">
+                <a class="socialButton" href="#">
                   <span class="visually-hidden">Google+</span>
-                  <img src="img/google.png" width="15" height="9" alt="Страница Google+  компании AIR-PLANET">
+                  <img class="socialButton__img" src="img/google.png" width="15" height="9" alt="Страница Google+  компании AIR-PLANET">
                 </a>
               </li>
-              <li class="social-item">
-                <a class="social-button" href="#">
+              <li class="socialBtns__item">
+                <a class="socialButton" href="#">
                   <span class="visually-hidden">Твиттер</span>
-                  <img src="img/twitter.png" width="11" height="9" alt="Страница Твиттер  компании AIR-PLANET">
+                  <img class="socialButton__img" src="img/twitter.png" width="11" height="9" alt="Страница Твиттер  компании AIR-PLANET">
                 </a>
               </li>
-              <li class="social-item">
-                <a class="social-button" href="#">
+              <li class="socialBtns__item">
+                <a class="socialButton" href="#">
                   <span class="visually-hidden">email</span>
-                  <img src="img/mail.png" width="12" height="9" alt="email  компании AIR-PLANET">
+                  <img class="socialButton__img" src="img/mail.png" width="12" height="9" alt="email  компании AIR-PLANET">
                 </a>
               </li>
             </ul>
-          </div>
+          </section>
         </div>
-      </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
 </html>
