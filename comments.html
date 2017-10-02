@@ -136,23 +136,25 @@
             <div class="comments-form__message">
               <p class="comments-form__item">
                 <label for="comments-form-text">Текст отзыва</label>
-                <textarea id="comments-form-text" rows="6" cols="250" placeholder="Мне понравилось"></textarea>
+                <textarea class="comments-form__textarea" id="comments-form-text" placeholder="Мне понравилось"></textarea>
               </p>
             </div>
             <div class="comments-form__photo-submit">
 
               <fieldset class="comments-form__photo-information">
                 <legend>Отображать фото в отзыве?</legend>
-                <ul>
+                <ul class="radio-filter">
                   <li class="filter-option">
                     <input id="filter-photo-display" class="visually-hidden filter-input-radio"
                       type="radio" name="comments-form__photo" value="display" checked>
-                    <label for="filter-photo-display">Да</label>
+                      <div class="radio-button radio-button-checked"><div class="radio-button-active"></div></div>
+                    <label class="filter-radio filter-radio-display" for="filter-photo-display">Да</label>
                   </li>
                   <li class="filter-option">
                     <input id="filter-photo-hide" class="visually-hidden filter-input-radio"
                       type="radio" name="comments-form__photo" value="hide">
-                    <label for="filter-photo-hide">Нет</label>
+                      <div class="radio-button"></div>
+                    <label class="filter-radio filter-radio-hide" for="filter-photo-hide">Нет</label>
                   </li>
                 </ul>
               </fieldset>
