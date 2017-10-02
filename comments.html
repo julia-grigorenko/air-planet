@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIR-PLANET</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+      <div class="container">
+        <a class="main-header__logo" href="index.html" >
+          <img src="img/logo_header.png" width="121" height="37" alt="Логотип компании AIR-PLANET">
+        </a>
+        <section class="main-header__contacts">
+          <a class="main-header__phone" href="tel:+79818169862" >8 (800) 00-392-10</a>
+          <div class="main-header__contacts-schedule">
+            <button>График работы</button>
+            <div class="main-header__schedule">
+              <span class="main-header__schedule-open">пн-вс: 09:00-20:00</span>
+              <span class="main-header__schedule-closed">обед: 14:00-14:30</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+    <main class="wrapper">
+      <aside class="site__navigation">
+        <nav class="sidebar">
+          <ul class="sidebar__navigation">
+            <li><a class="sidebar-main" href="index.html">Главная</a></li>
+            <li><a class="sidebar-team" href="team.html">Экипаж</a></li>
+            <li><a class="sidebar-comments sidebar-current current-comments" href="comments.html">Отзывы</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <section class="main-content-comments-page">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+          <li class="breadcrumbs__item-current">Отзывы</li>
+        </ul>
+        <h1 class="team-page__title">Отзывы</h1>
+        <ul class="comments">
+      		<li class="comments-item">
+    				<div class="comments-item__avatar">
+      				<img src="img/irina_comment.jpg" width="160" height="160" alt="аватар Ирины Паламарчук">
+      			</div>
+      			<div class="comments-item-text">
+      				<time datetime="2016-10-12" class="comments-item-text__date">12.10.2016</time>
+      				<div class="comments-item-text__author">Ирина Паламарчук</div>
+      				<div class="comments-item-text__message">
+                Ужасный полет, трясло первые полчаса так, что я боялась отстегнуть ремни.
+                Слава Богу, ничего не случилось, но мне даже валерьянка не помогла, так страшно было.
+                Не рекомендую эту компанию, лучше доплатить и лететь с комфортом.
+              </div>
+      			</div>
+      		</li>
+          <li class="comments__grey-border"></li>
+          <li class="comments-item">
+    				<div class="comments-item__avatar">
+      				<img src="img/alexandr_comment.jpg" width="160" height="160" alt="аватар Александра Белькова">
+      			</div>
+      			<div class="comments-item-text">
+      				<time datetime="2016-02-01" class="comments-item-text__date">01.02.2016</time>
+      				<div class="comments-item-text__author">Александр Бельков</div>
+      				<div class="comments-item-text__message">
+                Все понравилось, вежливые стюардессы, вовремя убирают,
+                напитки предлагали 2 раза, а еду – 1 раз. Единственное, что не понравилось,
+                как то мало места для ног, но с этим у меня часто проблема, рост 2,1м.
+              </div>
+      			</div>
+      		</li>
+          <li class="comments__grey-border"></li>
+          <li class="comments-item">
+    				<div class="comments-item__avatar">
+      				<img src="img/anonimus_comment.jpg" width="160" height="160" alt="аватар Игоря Николаенко">
+      			</div>
+      			<div class="comments-item-text">
+      				<time datetime="2015-12-22" class="comments-item-text__date">22.12.2015</time>
+      				<div class="comments-item-text__author">Игорь Николаенко</div>
+      				<div class="comments-item-text__message">
+              Не кормили вообще! Сказали, что это из-за того, что полет менее 2,5 часов.
+              Но прибавьте к этому время регистрации в аэропорту. Летел с женой и мы очень проголодались.
+              Просто имейте это ввиду, берите с собой хотя бы бутерброды, чипсы какие-то или печенье.
+              </div>
+      			</div>
+      		</li>
+          <li class="comments__grey-border"></li>
+          <li class="comments-item">
+    				<div class="comments-item__avatar">
+      				<img src="img/anastasia_comment.jpg" width="160" height="160" alt="аватар Анастасии Порядной">
+      			</div>
+      			<div class="comments-item-text">
+      				<time datetime="2015-08-14" class="comments-item-text__date">14.08.2015</time>
+      				<div class="comments-item-text__author">Анастасия Порядная</div>
+      				<div class="comments-item-text__message">
+                За такую цену просто все отлично! Кто недоволен, платите в 2 раза больше за аналогичные рейсы.
+                Мне понравилось, что на борту было чисто, я аллергик и всегда чутко реагирую на пыль.
+                Спасибо за полет! Рекомендую!
+              </div>
+      			</div>
+      		</li>
+         </ul>
+         <section class="pagination">
+           <div class="pagination__description">
+             Страница 1 из 7
+           </div>
+           <ul class="pagination__list">
+             <li class="pagination__item pagination__item-disabled"><</li>
+             <li class="pagination__item pagination__item-current">1</li>
+             <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+             <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+             <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
+             <li class="pagination__item"><a class="pagination__link" href="#">5</a></li>
+             <li class="pagination__item"><a class="pagination__link" href="#">6</a></li>
+             <li class="pagination__item"><a class="pagination__link" href="#">7</a></li>
+             <li class="pagination__item"><a class="pagination__link" href="#">></a></li>
+          </ul>
+        </section>
+        <section class="comments-form">
+          <h2 class="comments-form__header">Оставить отзыв</h2>
+          <form class="comments-form__form" method="post" action="https://echo/index.html">
+            <div class="comments-form__user-data">
+              <p class="comments-form__item">
+                <label for="comments-form-username">Ваше имя:</label>
+                <input id="comments-form-username" class="comments-form__textinput" type="text" name="username" size="40" placeholder="Андрей">
+              </p>
+              <p class="comments-form__item">
+                <label for="comments-form-vk">Ссылка на профиль VK:</label>
+                <input id="comments-form-vk" class="comments-form__textinput" type="text" name="vk" size="140" placeholder="vk.com/example">
+              </p>
+            </div>
+            <div class="comments-form__message">
+              <p class="comments-form__item">
+                <label for="comments-form-text">Текст отзыва</label>
+                <textarea id="comments-form-text" rows="6" cols="250" placeholder="Мне понравилось"></textarea>
+              </p>
+            </div>
+            <div class="comments-form__photo-submit">
+
+              <fieldset class="comments-form__photo-information">
+                <legend>Отображать фото в отзыве?</legend>
+                <ul>
+                  <li class="filter-option">
+                    <input id="filter-photo-display" class="visually-hidden filter-input-radio"
+                      type="radio" name="comments-form__photo" value="display" checked>
+                    <label for="filter-photo-display">Да</label>
+                  </li>
+                  <li class="filter-option">
+                    <input id="filter-photo-hide" class="visually-hidden filter-input-radio"
+                      type="radio" name="comments-form__photo" value="hide">
+                    <label for="filter-photo-hide">Нет</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <button class="button comments-form__button" type="submit">Отправить</button>
+            </div>
+          </form>
+        </section>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="container">
+          <section class="copyright">
+            <p class="copyright__text">Сделано с любовью и старанием <br>
+                на курсе «HTML + CSS» в <a class="copyright__link" href="#">LoftSchool</a>.<br>
+                Автор работы: <span class="copyright__owner">Григоренко Юлия</span>
+            </p>
+          </section>
+          <section class="footer-logo">
+            <a href="index.html" class="footer-logo__link">
+              <img class="footer-logo__img" src="img/logo_header.png" width="121" height="37" alt="Логотип компании AIR-PLANET">
+            </a>
+          </section>
+          <div class="col3">
+            <section class="footer-social">
+              <h3 class="footer-social__title">Наши социальные сети</h3>
+              <ul class="social-btns">
+                <li class="social-btns__item">
+                  <a class="social-button" href="#">
+                    <span class="visually-hidden">Вконтакте</span>
+                    <img class="social-button__img-vk" src="img/vk.png" width="14" height="8" alt="Страница Вконтакте компании AIR-PLANET">
+                  </a>
+                </li>
+                <li class="social-btns__item">
+                  <a class="social-button" href="#">
+                    <span class="visually-hidden">Фейсбук</span>
+                    <img class="social-button__img-fb" src="img/fb.png" width="6" height="13" alt="Страница Фейсбук  компании AIR-PLANET">
+                  </a>
+                </li>
+                <li class="social-btns__item">
+                  <a class="social-button" href="#">
+                    <span class="visually-hidden">Google+</span>
+                    <img class="social-button__img" src="img/google.png" width="15" height="9" alt="Страница Google+  компании AIR-PLANET">
+                  </a>
+                </li>
+                <li class="social-btns__item">
+                  <a class="social-button" href="#">
+                    <span class="visually-hidden">Твиттер</span>
+                    <img class="social-button__img" src="img/twitter.png" width="11" height="9" alt="Страница Твиттер  компании AIR-PLANET">
+                  </a>
+                </li>
+                <li class="social-btns__item">
+                  <a class="social-button" href="#">
+                    <span class="visually-hidden">email</span>
+                    <img class="social-button__img" src="img/mail.png" width="12" height="9" alt="email  компании AIR-PLANET">
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </div>
+      </div>
+    </footer>
+  </body>
+</html>

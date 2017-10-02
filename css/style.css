@@ -31,7 +31,7 @@ a {
   padding: 0;
 }*/
 
-.mainHeader {
+.main-header {
   background-color: #1c5bc3;
   min-height: 77px;
   margin: 0 auto;
@@ -47,20 +47,20 @@ a {
 
 /*==================================================================*/
 
-.mainHeader__logo {
+.main-header__logo {
   display: inline-block;
   padding-top: 17px;
   padding-bottom: 17px;
 }
 
-.mainHeader__logo img {
+.main-header__logo img {
   width: 121px;
   height: 37px;
 }
 
 /*==================================================================*/
 
-.mainHeader__contacts {
+.main-header__contacts {
   width: 181px;
   height: 47px;
   padding-top: 12px;
@@ -69,7 +69,7 @@ a {
   position: relative;
 }
 
-.mainHeader__phone {
+.main-header__phone {
   font-size: 21px;
   font-weight: 700;
   text-align: right;
@@ -79,7 +79,7 @@ a {
   display: inline-block;
 }
 
-.mainHeader__contactsSchedule button{
+.main-header__contacts-schedule button{
   font-size: 14px;
   text-align: right;
   line-height: 21px;
@@ -92,11 +92,11 @@ a {
   text-decoration: underline;
 }
 
-.mainHeader__contactsSchedule:hover {
+.main-header__contacts-schedule:hover {
   color: #ffffff;
 }
 
-.mainHeader__schedule {
+.main-header__schedule {
   font-size: 14px;
   color: #221f1f;
   position: absolute;
@@ -114,15 +114,15 @@ a {
   background-position: 50% 50%;
 }
 
-.mainHeader__schedule-open{
+.main-header__schedule-open{
   color: #1c5bc3;
   font-weight: bold;
 }
 
-.mainHeader__schedule {
+.main-header__schedule {
   display: none;
 }
-.mainHeader__contactsSchedule:hover .mainHeader__schedule {
+.main-header__contacts-schedule:hover .mainHeader__schedule {
   display: block;
 }
 /*==================================================================*/
@@ -240,7 +240,7 @@ li {
 
 /*==================================================================*/
 
-.mainContent__teamPage {
+.main-content__team-page {
   width: 880px;
   margin: 0px;
   margin-left: 180px;
@@ -285,7 +285,7 @@ li {
 
 /*==================================================================*/
 
-.teamPage__title{
+.team-page__title{
   margin: 0px;
   padding: 0px;
   padding-top: 23px;
@@ -297,12 +297,12 @@ li {
 
 /*==================================================================*/
 
-.teamPage__personal {
+.team-page__personal {
   margin: 0 auto;
   padding: 0px;
   padding-left: 10px;
   width: 870px;
-  font-family: Roboto;
+  font-family: 'Roboto Light', arial;
   font-size: 14px;
   line-height: 18px;
   color: #221f1f;
@@ -328,12 +328,13 @@ li {
   /*background-color: pink;*/
 }
 
-.personal__imgCover {
+.personal__img-cover {
   margin: 0 auto;
   padding: 0px;
   width: 160px;
   height: 160px;
   margin-bottom: 16px;
+  line-height: 20px;
 }
 
 .personal__img {
@@ -349,6 +350,7 @@ li {
   min-height:26px;
   margin-bottom: 0px;
   font-size: 16px;
+  line-height: 20px;
 }
 
 .personal__range{
@@ -374,7 +376,7 @@ li {
 
 /*==================================================================*/
 
-.mainFooter {
+.main-footer {
   margin: 0 auto;
   padding: 0;
   margin-top: 65px;
@@ -415,13 +417,13 @@ li {
 }
 
 /*==================================================================*/
-.footerLogo {
+.footer-logo {
   width: 33%;
   float: left;
   min-height: 100%;
 }
 
-.footerLogo__link {
+.footer-logo__link {
   display: inline-block;
   padding-top: 17px;
   padding-bottom: 17px;
@@ -429,7 +431,7 @@ li {
   /*background-color: lightgreen;*/
 }
 
-.footerLogo__img {
+.footer-logo__img {
   width: 121px;
   height: 37px;
 }
@@ -441,7 +443,7 @@ li {
   min-height: 100%;
 }
 
-.footerSocial {
+.footer-social {
   float: right;
   width: 160px;
   font-family: Roboto;
@@ -451,17 +453,17 @@ li {
 
 }
 
-.socialBtns {
+.social-btns {
 -webkit-padding-start: 0px;
 margin: 0px;
 padding: 0px;
 }
 
-.footerSocial__title {
+.footer-social__title {
   font-size: 13px;
 }
 
-.socialBtns__item {
+.social-btns__item {
   float: left;
   width: 22px;
   height: 22px;
@@ -474,27 +476,27 @@ padding: 0px;
   position: relative;
 }
 
-.socialBtns__item:nth-child(5) {
+.social-btns__item:nth-child(5) {
   margin-right: 0px;
 }
 
-.socialBtns__item:hover {
+.social-btns__item:hover {
  background-color: #d2def3;
 }
 
-.socialButton__img {
+.social-button__img {
   position: absolute;
   top: 6px;
   left: 5px;
 }
 
-.socialButton__img-vk {
+.social-button__img-vk {
   position: absolute;
   top: 7px;
   left: 4px;
 }
 
-.socialButton__img-fb {
+.social-button__img-fb {
   position: absolute;
   top: 5px;
   left: 8px;
@@ -514,7 +516,7 @@ padding: 0px;
 }
 /*==================================================================*/
 
-.mainContent-mainPage {
+.main-content-main-page {
   padding: 0px;
   margin: 0px;
   /*-webkit-margin-after: 0px;
@@ -526,12 +528,12 @@ padding: 0px;
   color: #221f1f;
 }
 
-.mainContent-mainPage p {
+.main-content-main-page p {
   margin-top: 23px;
 }
 /*==================================================================*/
 
-.mainContent__titleBackground {
+.main-content__title-background {
   margin: 0px;
   padding: 0px;
   width: 879px;
@@ -541,7 +543,7 @@ padding: 0px;
   background-position: 0px -78px;
 }
 
-.mainContent__mainTitle{
+.main-content__main-title{
   display: inline-block;
   margin: 0px;
   padding-top: 158px;
@@ -557,18 +559,18 @@ padding: 0px;
 
 /*==================================================================*/
 
-.mainContent__aboutAirPlanet {
+.main-content__about-AirPlanet {
   width: 700px;
   margin-bottom: 25px;
   /*background-color: pink;*/
 }
 
-.aboutAirPlanet__customers li {
+.about-AirPlanet__customers li {
   font: inherit;
   list-style: disc outside;
 }
 
-.mainContent__aboutAirPlanet-companies {
+.main-content__about-AirPlanet-companies {
   font-weight: bold;
 }
 
@@ -631,7 +633,7 @@ text-decoration: underline;
   margin-bottom: 50px;
 }
 
-.partnersLogo {
+.partners-logo {
   margin: 0px;
   padding: 0px;
   width: 700px;
@@ -639,161 +641,323 @@ text-decoration: underline;
   /*background-color: lightblue;*/
 }
 
-.partnersLogo li {
+.partners-logo li {
   float: left;
   margin-right: 115px;
   margin-bottom: 60px;
 }
 
-.partnersLogo li:nth-child(3n) {
+.partners-logo li:nth-child(3n) {
   margin-right:0px;
   /*background-color: pink;*/
 }
 
 /*==================================================================*/
 
-.partnersLogo__bmpCompany {
+.partners-logo__bmpCompany {
   width:159px;
   height:30px;
   position: relative;
 }
 
-.partnersLogo__bmpCompany img{
+.partners-logo__bmpCompany img{
   width:100%;
   position: absolute;
   top:15px;
   left:0px;
 }
 
-.partnersLogo__bmpCompany-over {
+.partners-logo__bmpCompany-over {
   opacity: 100%;
   z-index: 30;
 
 }
 
-.partnersLogo__bmpCompany-over:hover {
+.partners-logo__bmpCompany-over:hover {
   opacity: 0;
 }
 
 /*==================================================================*/
 
-.partnersLogo__tetraInstall {
+.partners-logo__tetraInstall {
   width:161px;
   height:64px;
   position: relative;
 }
 
-.partnersLogo__tetraInstall img{
+.partners-logo__tetraInstall img{
   width:100%;
   position: absolute;
   top:0px;
   left:0px;
 }
 
-.partnersLogo__tetraInstall-over {
+.partners-logo__tetraInstall-over {
   opacity: 100%;
   z-index: 30;
 
 }
 
-.partnersLogo__tetraInstall-over:hover {
+.partners-logo__tetraInstall-over:hover {
   opacity: 0;
 }
 
 /*==================================================================*/
 
-.partnersLogo__sibAirlines {
+.partners-logo__sibAirlines {
   width:133px;
   height:64px;
   position: relative;
 }
 
-.partnersLogo__sibAirlines img{
+.partners-logo__sibAirlines img{
   width:100%;
   position: absolute;
   top:0px;
   left:5px;
 }
 
-.partnersLogo__sibAirlines-over {
+.partners-logo__sibAirlines-over {
   opacity: 100%;
   z-index: 30;
 }
 
-.partnersLogo__sibAirlines-over:hover {
+.partners-logo__sibAirlines-over:hover {
   opacity: 0;
 }
 
 /*==================================================================*/
 
-.partnersLogo__oneAir {
+.partners-logo__oneAir {
   width:159px;
   height:63px;
   position: relative;
 }
 
-.partnersLogo__oneAir img{
+.partners-logo__oneAir img{
   width:100%;
   position: absolute;
   top:0px;
   left:0px;
 }
 
-.partnersLogo__oneAir-over {
+.partners-logo__oneAir-over {
   /*opacity: 100%;*/
   z-index: 30;
 }
 
-.partnersLogo__oneAir-over:hover {
+.partners-logo__oneAir-over:hover {
   opacity: 0;
 }
 
 /*==================================================================*/
 
-.partnersLogo__BingAir {
+.partners-logo__BingAir {
   width:161px;
   height:64px;
   position: relative;
 }
 
-.partnersLogo__BingAir img{
+.partners-logo__BingAir img{
   /*width:100%;*/
   position: absolute;
   top:0px;
   left:60px;
 }
 
-.partnersLogo__BingAir-over {
+.partners-logo__BingAir-over {
   opacity: 100%;
   z-index: 30;
 }
 
-.partnersLogo__BingAir-over:hover {
+.partners-logo__BingAir-over:hover {
   opacity: 0;
 }
 
 /*==================================================================*/
 
-.partnersLogo__Ural {
+.partners-logo__Ural {
   width:133px;
   height:64px;
   position: relative;
 }
 
-.partnersLogo__Ural img{
-  /*width:100%;*/
+.partners-logo__Ural img{
   position: absolute;
   top:0px;
   left:30px;
 }
 
-.partnersLogo__Ural-over {
+.partners-logo__Ural-over {
   opacity: 100%;
   z-index: 30;
 }
 
-.partnersLogo__Ural-over:hover {
+.partners-logo__Ural-over:hover {
   opacity: 0;
 }
 
 /*==================================================================*/
+
+.main-content-comments-page {
+  width: 880px;
+  margin: 0px;
+  margin-left: 180px;
+  padding: 0px;
+  padding-top: 40px;
+  background-color: lightgreen;
+}
+
+/*==================================================================*/
+
+.comments {
+  margin: 0px;
+  padding: 0px;
+  margin-top: 50px;
+}
+
+.comments-item {
+  margin: 0px;
+  padding: 0px;
+  height: 160px;
+  margin-bottom: 30px;
+}
+
+.comments-item:last-child {
+  margin-bottom: 50px;
+}
+
+.comments-item__avatar {
+  float: left;
+  width: 160px;
+  height: 160px;
+  }
+
+.comments-item__avatar img {
+  display: block;
+  width: 100%;
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path:circle(50% at 50% 50%);
+}
+
+.comments-item-text{
+  margin-left: 180px;
+  font-family: 'Roboto Light', arial;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.comments-item-text__date {
+  font-size: 14px;
+  line-height: 18px;
+  color: #b7b7b7;
+}
+
+.comments-item-text__author {
+  font-weight: bold;
+  line-height: 38px;
+}
+
+.comments-item-text__message {
+  line-height: 25px;
+}
+
+.comments__grey-border {
+  width: 880px;
+  border-top: 2px solid #f5f5f5;
+  margin-bottom: 30px;
+}
+
+/*==================================================================*/
+
+.pagination {
+  font-family: 'Roboto Light', arial;
+  font-size: 14px;
+  line-height: 18px;
+  margin-left: 220px;
+  color: #656464;
+  margin-bottom: 55px;
+}
+
+.pagination__description {
+  display: inline-block;
+
+}
+
+.pagination__list {
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  margin-left: 15px;
+
+}
+
+.pagination__item {
+  display: inline-block;
+  font-weight: bold;
+  color: #221f1f;
+  margin-right: 18px;
+}
+
+.pagination__link{
+  display: inline-block;
+  font: inherit;
+  color: inherit;
+}
+
+.pagination__item-current {
+  width: 25px;
+  height: 22px;
+  padding-top: 3px;
+  background-color: #1c5bc3;
+  border-radius: 10%;
+  color: #ffffff;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.pagination__item-disabled {
+  color: #bdbcbc;
+}
+
+/*==================================================================*/
+
+.comments-form {
+  width: 560px;
+  height: 324px;
+  padding: 29px 70px;
+  background-color: #f5f5f5;
+  margin: 0 auto;
+  font-family: 'Roboto Light', arial;
+}
+
+.comments-form__header {
+  margin: 0px;
+  padding: 0px;
+  background-color: pink;
+  font-size: 49px;
+  line-height: 38px;
+}
+
+.comments-form__form {
+  margin: 0px;
+  padding: 0px;
+  margin-top: 30px;
+}
+
+.comments-form__item {
+  margin: 0px;
+  padding: 0px;
+  width: 265px;
+  display: inline-block;
+
+}
+
+.comments-form__user-data > .comments-form__item:nth-child(1) {
+  margin-right: 15px;
+  background-color: yellow;
+}
+
+.comments-form__textinput {
+  width: 260px;
+}

@@ -2,22 +2,24 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AIR-PLANET</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <header class="mainHeader">
+    <header class="main-header">
       <div class="container">
-        <a class="mainHeader__logo" href="index.html" >
+        <a class="main-header__logo" href="index.html" >
           <img src="img/logo_header.png" width="121" height="37" alt="Логотип компании AIR-PLANET">
         </a>
-        <section class="mainHeader__contacts">
-          <a class="mainHeader__phone" href="tel:+79818169862" >8 (800) 00-392-10</a>
-          <div class="mainHeader__contactsSchedule">
+        <section class="main-header__contacts">
+          <a class="main-header__phone" href="tel:+79818169862" >8 (800) 00-392-10</a>
+          <div class="main-header__contacts-schedule">
             <button>График работы</button>
-            <div class="mainHeader__schedule">
+            <div class="main-header__schedule">
               <b>пн-вс: 09:00-20:00</b>
               <span>обед: 14:00-14:30</span>
             </div>
@@ -26,22 +28,24 @@
       </div>
     </header>
     <main class="wrapper">
-      <nav class="sidebar">
-        <ul class="sidebar__navigation">
-          <li><a class="sidebar-main" href="#">Главная</a></li>
-          <li><a class="sidebar-team  sidebar-current current-team" href="team.html">Экипаж</a></li>
-          <li><a class="sidebar-comments" href="comments.html">Отзывы</a></li>
-        </ul>
-      </nav>
-      <div class="mainContent__teamPage">
+      <aside class="site__navigation">
+        <nav class="sidebar">
+          <ul class="sidebar__navigation">
+            <li><a class="sidebar-main" href="index.html">Главная</a></li>
+            <li><a class="sidebar-team  sidebar-current current-team" href="#">Экипаж</a></li>
+            <li><a class="sidebar-comments" href="comments.html">Отзывы</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <div class="main-content__team-page">
         <ul class="breadcrumbs">
           <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
           <li class="breadcrumbs__item-current">Экипаж</li>
         </ul>
-        <h1 class="teamPage__title">Экипаж</h1>
-        <ul class="teamPage__personal">
+        <h1 class="team-page__title">Экипаж</h1>
+        <ul class="team-page__personal">
           <li class="personal__item">
-            <div class="personal__imgCover">
+            <div class="personal__img-cover">
               <img  class="personal__img" src="img/Alex.jpg" width="160" height="160" alt="Главный пилот компании AIR-PLANET Белов Алексей Вадимович">
             </div>
             <h2 class="personal__title">Белов Алексей Вадимович</h2>
@@ -57,7 +61,7 @@
             </div>
           </li>
           <li class="personal__item">
-            <div class="personal__imgCover">
+            <div class="personal__img-cover">
               <img class="personal__img" src="img/Inna.jpg" width="160" height="160" alt="Бортпроводник компании AIR-PLANET Сухарина Инна Николаевна">
             </div>
             <h2 class="personal__title">Сухарина Инна Николаевна</h2>
@@ -72,7 +76,7 @@
             </div>
           </li>
           <li class="personal__item">
-            <div class="personal__imgCover">
+            <div class="personal__img-cover">
               <img class="personal__img" src="img/Boris.jpg" width="160" height="160" alt="Авиатехник компании AIR-PLANET Лещ Борис Анатольевич">
             </div>
             <h2 class="personal__title">Лещ Борис Анатольевич</h2>
@@ -86,7 +90,7 @@
              </div>
           </li>
           <li class="personal__item">
-            <div class="personal__imgCover">
+            <div class="personal__img-cover">
               <img class="personal__img" src="img/Elina.jpg" width="160" height="160" alt="Диспетчер компании AIR-PLANET Дигангидзе Элина Даниловна">
             </div>
             <h2 class="personal__title">Дигангидзе Элина Даниловна</h2>
@@ -102,7 +106,7 @@
              </div>
           </li>
           <li class="personal__item">
-            <div class="personal__imgCover">
+            <div class="personal__img-cover">
               <img class="personal__img" src="img/Elena.jpg" width="160" height="160" alt="Старший бортпроводник компании AIR-PLANET Следь Елена Николаевна">
             </div>
             <h2 class="personal__title">Следь Елена Николаевна</h2>
@@ -118,7 +122,7 @@
              </div>
           </li>
           <li class="personal__item">
-            <div class="personal__imgCover">
+            <div class="personal__img-cover">
               <img class="personal__img" src="img/Yrii.jpg" width="160" height="160" alt="Второй пилот компании AIR-PLANET Нестеренко Юрий Афанасьевич">
             </div>
             <h2 class="personal__title">Нестеренко Юрий Афанасьевич</h2>
@@ -135,51 +139,51 @@
         <div class="cap"></div>
       </div>
     </main>
-    <footer class="mainFooter">
+    <footer class="main-footer">
       <div class="container">
           <section class="copyright">
             <p class="copyright__text">Сделано с любовью и старанием <br>
                 на курсе «HTML + CSS» в <a class="copyright__link" href="#">LoftSchool</a>.<br>
-                Автор работы: <span class="copyright__owner">Прохладов Вадим</span>
+                Автор работы: <span class="copyright__owner">Григоренко Юлия</span>
             </p>
           </section>
-          <section class="footerLogo">
-            <a href="index.html" class="footerLogo__link">
-              <img class="footerLogo__img" src="img/logo_header.png" width="121" height="37" alt="Логотип компании AIR-PLANET">
+          <section class="footer-logo">
+            <a href="index.html" class="footer-logo__link">
+              <img class="footer-logo__img" src="img/logo_header.png" width="121" height="37" alt="Логотип компании AIR-PLANET">
             </a>
           </section>
           <div class="col3">
-            <section class="footerSocial">
-              <h3 class="footerSocial__title">Наши социальные сети</h3>
-              <ul class="socialBtns">
-                <li class="socialBtns__item">
-                  <a class="socialButton" href="#">
+            <section class="footer-social">
+              <h3 class="footer-social__title">Наши социальные сети</h3>
+              <ul class="social-btns">
+                <li class="social-btns__item">
+                  <a class="social-button" href="#">
                     <span class="visually-hidden">Вконтакте</span>
-                    <img class="socialButton__img-vk" src="img/vk.png" width="14" height="8" alt="Страница Вконтакте компании AIR-PLANET">
+                    <img class="social-button__img-vk" src="img/vk.png" width="14" height="8" alt="Страница Вконтакте компании AIR-PLANET">
                   </a>
                 </li>
-                <li class="socialBtns__item">
-                  <a class="socialButton" href="#">
+                <li class="social-btns__item">
+                  <a class="social-button" href="#">
                     <span class="visually-hidden">Фейсбук</span>
-                    <img class="socialButton__img-fb" src="img/fb.png" width="6" height="13" alt="Страница Фейсбук  компании AIR-PLANET">
+                    <img class="social-button__img-fb" src="img/fb.png" width="6" height="13" alt="Страница Фейсбук  компании AIR-PLANET">
                   </a>
                 </li>
-                <li class="socialBtns__item">
-                  <a class="socialButton" href="#">
+                <li class="social-btns__item">
+                  <a class="social-button" href="#">
                     <span class="visually-hidden">Google+</span>
-                    <img class="socialButton__img" src="img/google.png" width="15" height="9" alt="Страница Google+  компании AIR-PLANET">
+                    <img class="social-button__img" src="img/google.png" width="15" height="9" alt="Страница Google+  компании AIR-PLANET">
                   </a>
                 </li>
-                <li class="socialBtns__item">
-                  <a class="socialButton" href="#">
+                <li class="social-btns__item">
+                  <a class="social-button" href="#">
                     <span class="visually-hidden">Твиттер</span>
-                    <img class="socialButton__img" src="img/twitter.png" width="11" height="9" alt="Страница Твиттер  компании AIR-PLANET">
+                    <img class="social-button__img" src="img/twitter.png" width="11" height="9" alt="Страница Твиттер  компании AIR-PLANET">
                   </a>
                 </li>
-                <li class="socialBtns__item">
-                  <a class="socialButton" href="#">
+                <li class="social-btns__item">
+                  <a class="social-button" href="#">
                     <span class="visually-hidden">email</span>
-                    <img class="socialButton__img" src="img/mail.png" width="12" height="9" alt="email  компании AIR-PLANET">
+                    <img class="social-button__img" src="img/mail.png" width="12" height="9" alt="email  компании AIR-PLANET">
                   </a>
                 </li>
               </ul>
