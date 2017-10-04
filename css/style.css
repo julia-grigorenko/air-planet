@@ -87,7 +87,7 @@ a {
   text-decoration: underline;
 }
 
-.main-header__contacts-schedule:hover {
+.main-header__contacts-schedule button:hover {
   color: #ffffff;
 }
 
@@ -117,7 +117,7 @@ a {
 .main-header__schedule {
   display: none;
 }
-.main-header__contacts-schedule:hover .mainHeader__schedule {
+.main-header__contacts-schedule:hover .main-header__schedule {
   display: block;
 }
 /*==================================================================*/
@@ -164,6 +164,12 @@ li {
   list-style: none;
 }
 
+.sidebar-main:hover,
+.sidebar-team:hover,
+.sidebar-comments:hover {
+    color: #221f1f;
+}
+
 .sidebar__navigation li {
   line-height: 1.5;
   padding-bottom: 30px;
@@ -184,6 +190,10 @@ li {
   background-position: 0 0;
 }
 
+.sidebar-main:hover:before {
+  background-image: url(../img/main_icon-black.png);
+}
+
 .sidebar-team::before {
   content: "";
   position: absolute;
@@ -197,6 +207,10 @@ li {
   background-position: 0 0;
 }
 
+.sidebar-team:hover:before {
+  background-image: url(../img/team_icon-black.png);
+}
+
 .sidebar-comments::before {
   content: "";
   position: absolute;
@@ -208,7 +222,10 @@ li {
   background-image: url(../img/feed_icon-blue.png);
   background-repeat: no-repeat;
   background-position: 0 0;
+}
 
+.sidebar-comments:hover:before {
+  background-image: url(../img/feed_icon-black.png);
 }
 
 .sidebar-current {
@@ -670,6 +687,7 @@ text-decoration: underline;
 
 .partners-logo__bmpCompany-over:hover {
   opacity: 0;
+  transition: .8s ease;
 }
 
 /*==================================================================*/
@@ -695,6 +713,7 @@ text-decoration: underline;
 
 .partners-logo__tetraInstall-over:hover {
   opacity: 0;
+  transition: .8s ease;
 }
 
 /*==================================================================*/
@@ -719,6 +738,7 @@ text-decoration: underline;
 
 .partners-logo__sibAirlines-over:hover {
   opacity: 0;
+  transition: .8s ease;
 }
 
 /*==================================================================*/
@@ -743,6 +763,7 @@ text-decoration: underline;
 
 .partners-logo__oneAir-over:hover {
   opacity: 0;
+  transition: .8s ease;
 }
 
 /*==================================================================*/
@@ -767,6 +788,7 @@ text-decoration: underline;
 
 .partners-logo__BingAir-over:hover {
   opacity: 0;
+  transition: .8s ease;
 }
 
 /*==================================================================*/
@@ -790,6 +812,7 @@ text-decoration: underline;
 
 .partners-logo__Ural-over:hover {
   opacity: 0;
+  transition: .8s ease;
 }
 
 /*==================================================================*/
