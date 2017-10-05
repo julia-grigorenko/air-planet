@@ -83,7 +83,8 @@ a {
   display: inline-block;
   background-color:#1c5bc3;
   border: none;
-
+  font-weight: bold;
+  padding: 0px;
   text-decoration: underline;
 }
 
@@ -186,10 +187,6 @@ li {
     transition: .5s;
 }
 
-.sidebar-main {
-  transition: .5s;
-}
-
 .sidebar-main::before {
   content: "";
   position: absolute;
@@ -230,11 +227,6 @@ li {
   background-image: url(../img/main_icon-black.png);
 }
 
-
-.sidebar-team {
-  transition: .5s;
-}
-
 .sidebar-team::before {
   content: "";
   position: absolute;
@@ -269,18 +261,10 @@ li {
 
 .sidebar-current .sidebar-team{
   color: #221f1f;
-  transition: .5s;
 }
 
 .sidebar-current .sidebar-team:before {
   background-image: url(../img/team_icon-black.png);
-  transition: 5s;
-}
-
-
-
-.sidebar-comments {
-  transition: .5s;
 }
 
 .sidebar-comments::before {
@@ -313,17 +297,14 @@ li {
 .sidebar-comments:hover:after {
   opacity: 1;
   transition: .5s;
-
 }
 
 .sidebar-current .sidebar-comments {
   color: #221f1f;
-  transition: .5s;
 }
 
 .sidebar-current .sidebar-comments:before {
   background-image: url(../img/feed_icon-black.png);
-  transition: 5s;
 }
 
 /*==================================================================*/
@@ -343,6 +324,7 @@ li {
   margin: 0px;
   padding: 0px;
   font-family: Roboto;
+  font-style: italic;
   font-size: 14px;
   line-height: 18px;
   color: #497ccf;
@@ -351,6 +333,7 @@ li {
 .breadcrumbs__link {
   text-decoration: underline;
   display: inline-block;
+  color: #6385d0;
 }
 
 .breadcrumbs__item {
@@ -390,7 +373,6 @@ li {
   padding: 0px;
   padding-left: 10px;
   width: 870px;
-  font-family: 'Roboto Light', arial;
   font-size: 14px;
   line-height: 18px;
   color: #221f1f;
@@ -558,9 +540,9 @@ padding: 0px;
   margin: 0px;
   padding: 0px;
   margin-right: 3px;
-  border: 1px solid #ffffff;
+  border: 1px solid #d2def3;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: #d2def3;
   position: relative;
 }
 
@@ -569,7 +551,8 @@ padding: 0px;
 }
 
 .social-btns__item:hover {
- background-color: #d2def3;
+ background-color: #ffffff;
+ border: 1px solid #ffffff;
 }
 
 .social-button__img {
