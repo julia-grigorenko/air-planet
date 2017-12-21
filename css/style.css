@@ -117,15 +117,11 @@ a {
 }
 
 .main-header__schedule {
-  /*display: none;*/
-  opacity: 0;
-
+  display: none;
 }
 .main-header__contacts-schedule:hover .main-header__schedule {
-  /*display: block;*/
-  opacity: 1;
-  transition: .8s;
-
+  display: block;
+  transition: 1.8s;
 }
 /*==================================================================*/
 
